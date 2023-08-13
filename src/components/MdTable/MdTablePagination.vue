@@ -9,7 +9,7 @@
         </md-select>
       </md-field>
     </template>
-
+{{ mdPage }} {{ currentPageSize }} {{ mdCount }}
     <span>{{ (mdPage - 1) * currentPageSize + 1 }}–{{ Math.min(mdPage * currentPageSize, mdCount) }} {{ mdSeparator }} {{ mdCount }}</span>
 
     <md-button class="md-icon-button md-table-pagination-previous" @click="changePage(-1)" :disabled="mdPage === 1">
